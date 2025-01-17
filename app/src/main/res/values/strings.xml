@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="click">Click</string>
+    <string name="coffee_shop">Coffee Shop</string>
+    <string name="brand_logo">Brand Logo</string>
+    <string name="profile_logo">profile_logo</string>
+    <string name="najjar_cafe">Najjar Cafe</string>
+    <string name="home">Home</string>
+</resources>
