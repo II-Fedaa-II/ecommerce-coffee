@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//import com.bumptech.glide.Glide;
 import com.example.ecommerce.ItemActivity;
 import com.example.ecommerce.R;
 import com.example.ecommerce.model.Item;
@@ -47,7 +48,7 @@ public class GridAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.grid_item, parent, false);
             holder = new ViewHolder();
             holder.imageView = convertView.findViewById(R.id.itemImage);
-            holder.textView = convertView.findViewById(R.id.itemText);
+            holder.textView = convertView.findViewById(R.id.itemName);
             holder.priceView = convertView.findViewById(R.id.itemPrice);
             convertView.setTag(holder);
         } else {
@@ -55,7 +56,7 @@ public class GridAdapter extends BaseAdapter {
         }
 
         Item item = items.get(position);
-        holder.imageView.setImageResource(item.getImageResId());
+//        Glide.with(context).load(item.getImageUrl()).into(holder.imageView);
         holder.textView.setText(item.getName());
         holder.priceView.setText(item.getPrice());
 
@@ -63,7 +64,7 @@ public class GridAdapter extends BaseAdapter {
             Intent intent = new Intent(context, ItemActivity.class);
             intent.putExtra("itemName", item.getName());
             intent.putExtra("itemPrice", item.getPrice());
-            intent.putExtra("itemImage", item.getImageResId());
+            intent.putExtra("itemImage", item.getImageUrl());//getImageResId());
             intent.putExtra("itemDescription", "Sample description for " + item.getName());
             context.startActivity(intent);
         });

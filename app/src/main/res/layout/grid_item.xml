@@ -20,31 +20,28 @@
 
         <ImageView
             android:id="@+id/itemImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/itemText"
+            android:id="@+id/itemName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="8dp"
             android:text="Item Name"
             android:textSize="16sp"
-            android:textColor="#000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/itemPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="4dp"
-            android:text="$9.99"
+            android:text="$0.00"
             android:textSize="14sp"
-            android:textColor="#FF5722"
-            android:textStyle="bold" />
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingTop="2dp"
+            android:gravity="center"/>
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

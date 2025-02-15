@@ -1,3 +1,20 @@
+//pluginManagement {
+//    repositories {
+//        google()
+//        mavenCentral()
+//        gradlePluginPortal()
+//    }
+//}
+//
+//dependencyResolutionManagement {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+//
+//rootProject.name = "Ecommerce"
+//include(":app")
 pluginManagement {
     repositories {
         google {
@@ -21,4 +38,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ecommerce"
 include(":app")
- 
